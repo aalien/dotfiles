@@ -59,3 +59,15 @@ let g:DoxygenToolkit_dateTag = "\\date "
 let g:DoxygenToolkit_blockTag = "\\name "
 let g:DoxygenToolkit_classTag = "\\class "
 
+set statusline=%F       "full path of the filename
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+set laststatus=2        "always show statusline
