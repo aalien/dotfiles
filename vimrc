@@ -5,6 +5,7 @@ filetype on
 filetype plugin on
 filetype indent on
 syntax enable
+set ffs=unix,dos,mac
 
 set shiftwidth=4
 set softtabstop=4
