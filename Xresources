@@ -1,0 +1,64 @@
+urxvt*font:             xft:DejaVu Sans Mono:pixelsize=10
+urxvt*borderLess:	false
+urxvt*externalBorder:	0
+urxvt*internalBorder:	2
+urxvt*scrollBar:	false
+urxvt*depth:		32
+urxvt*background:	rgba:0000/0000/0000/ffff
+urxvt*foreground:	#c8c8c8
+urxvt*cursorColor:	#ffffff
+urxvt*cursorColor2:	#000000
+urxvt*cursorBlink:	false
+urxvt*inheritPixmap:	false
+urxvt*termName:		rxvt-unicode
+urxvt*saveLines:	1000
+urxvt*scrollTtyOutput:	false
+urxvt*scrollTtyKeypress:	true
+urxvt*mouseWheelScrollPage:	false
+urxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+urxvt.url-select.launcher:  firefox
+urxvt.url-select.underline: true
+urxvt.keysym.M-u:           perl:url-select:select_next
+urxvt.keysym.M-Escape:      perl:keyboard-select:activate
+urxvt.keysym.M-s:           perl:keyboard-select:search
+
+
+! Black
+*color0:  #2E3436
+*color8:  #555753
+! Red
+*color1:  #CC0000
+*color9:  #EF2929
+! Green
+*color2:  #4E9A06
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+
+bashrun2-run-dialog*font:             xft:DejaVu Sans Mono:pixelsize=10
+bashrun2-run-dialog*borderLess:	false
+bashrun2-run-dialog*externalBorder:	0
+bashrun2-run-dialog*internalBorder:	0
+bashrun2-run-dialog*scrollBar:	false
+bashrun2-run-dialog*depth:		32
+bashrun2-run-dialog*background:	rgba:0000/0000/0000/ffff
+bashrun2-run-dialog*foreground:	#c8c8c8
+bashrun2-run-dialog*cursorColor:	#ffffff
+bashrun2-run-dialog*cursorColor2:	#000000
+bashrun2-run-dialog*cursorBlink:	false
