@@ -72,3 +72,17 @@ set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 set laststatus=2        "always show statusline
+
+" Add ranger as a file chooser in vim
+" Compatible with ranger 1.4.2 through 1.6.*
+fun! RangerChooser()
+    let tmpfile = tempname()
+    let dir = expand("%:p:h")
+    exec 'silent !ranger --choosefile='.tmpfile dir
+    if filereadable(tmpfile)
+        exe 'edit' readfile(tmpfile)[0]
+        call delete(tmpfile)
+    endif
+    redraw!
+endfun
+map ,r :call RangerChooser()<CR>
