@@ -1,3 +1,4 @@
+execute pathogen#infect()
 let pascal_delphi="1"
 
 set nocompatible
