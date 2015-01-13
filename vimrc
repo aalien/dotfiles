@@ -73,6 +73,9 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 set laststatus=2        "always show statusline
 
+" Highlight word under cursor by double clicking
+nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
+
 " Add ranger as a file chooser in vim
 " Compatible with ranger 1.4.2 through 1.6.*
 fun! RangerChooser()
